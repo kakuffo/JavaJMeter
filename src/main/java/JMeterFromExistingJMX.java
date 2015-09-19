@@ -17,8 +17,8 @@ public class JMeterFromExistingJMX {
         StandardJMeterEngine jmeter = new StandardJMeterEngine();
 
         // Initialize Properties, logging, locale, etc.
-        JMeterUtils.loadJMeterProperties("/path/to/your/jmeter/bin/jmeter.properties");
-        JMeterUtils.setJMeterHome("/path/to/your/jmeter");
+        JMeterUtils.loadJMeterProperties("/usr/local/opt/jmeter/libexec/bin/jmeter.properties");
+        JMeterUtils.setJMeterHome("/usr/local/opt/jmeter/bin");
         JMeterUtils.initLogging();// you can comment this line out to see extra log messages of i.e. DEBUG level
         JMeterUtils.initLocale();
 
